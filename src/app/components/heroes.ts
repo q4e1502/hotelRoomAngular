@@ -8,7 +8,7 @@ import { CABLE_URL } from '../services/utils/mock-hero';
 @Component({
   selector: 'my-heroes',
   templateUrl: '../views/heroes.component.html',
-  styleUrls: ['../style.css'],
+  styleUrls: ['../style.scss'],
   providers: [HeroService]
 })
 

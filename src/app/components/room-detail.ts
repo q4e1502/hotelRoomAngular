@@ -8,7 +8,7 @@ import 'rxjs/add/operator/switchMap';
 @Component({
   selector: 'room-detail',
   templateUrl: '../views/room-detail.component.html',
-  styleUrls: ['../style.css']
+  styleUrls: ['../style.scss']
 })
 
 export class RoomDetailComponent implements OnInit{

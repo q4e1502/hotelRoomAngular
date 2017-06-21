@@ -1,9 +1,9 @@
 import { BrowserModule }         from '@angular/platform-browser';
-import { NgModule, OnInit }              from '@angular/core';
+import { NgModule, OnInit }      from '@angular/core';
 import { FormsModule }           from '@angular/forms';
 import { HttpModule }            from '@angular/http';
 import { RouterModule }          from '@angular/router';
-
+import { MaterializeModule } from 'ng2-materialize';
 import { AppComponent }          from './app.component';
 import { DashboardComponent }    from './components/dashboard';
 import { RoomDetailComponent}    from './components/room-detail';
@@ -26,6 +26,7 @@ import { RoutesModule }          from './routes';
     FormsModule,
     HttpModule,
     RoutesModule,
+    MaterializeModule.forRoot()
   ],
   providers: [HeroService, RoomApi],
   bootstrap: [AppComponent]
@@ -33,8 +34,5 @@ import { RoutesModule }          from './routes';
 export class AppModule implements OnInit {
   constructor(){}
 
-  ngOnInit(): void {
-    // console.log(angular)
-    // this.getHeroes();
-  }
+  ngOnInit(): void {}
 }
